@@ -15,4 +15,9 @@ public class GeneralApi {
     public String hellWorld(@RequestParam String name) {
         return "Hello:" + name ;
     }
+
+    @GetMapping("/hello/delete")
+    public String hellWorldDelete(@RequestParam String name) {
+        return "Hello:" + name +" deleted" ;
+    }
 }
